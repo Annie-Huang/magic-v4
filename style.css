@@ -104,6 +104,11 @@ img {
   background: var(--clr-neutral-900);
 }
 
+.bg-accent {
+  color: var(--clr-neutral-900);
+  background: var(--clr-accent-400);
+}
+
 .text-accent {
   color: var(--clr-accent-400);
 }
@@ -126,10 +131,8 @@ h1 span {
   font-weight: 700;
 }
 
-h2 {
+.h2 {
   font-size: var(--fs-700);
-}
-h2 span {
   font-weight: 700;
 }
 
@@ -145,13 +148,6 @@ h2 span {
   width: max-content;
 }
 
-.section-subtitle {
-  font-size: var(--fs-700);
-}
-.section-subtitle span {
-  font-weight: 700;
-}
-
 a {
   color: var(--clr-accent-500);
   text-decoration: none;
@@ -162,16 +158,27 @@ a {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+
+  /*letter-spacing: 0.1rem;*/
+  letter-spacing: 2.5px;
+
   font-weight: 700;
   font-size: 1.125rem;
-  color: inherit;
+  line-height: 1;
+  /*color: inherit;*/
 
   /*padding: 0.75em 1.5em;*/
-  padding: 1.3125em 2.875em; /* 21 px 46px */
+  padding: 1.3125em 2.875em; /* 21px 46px */
 
   background-color: var(--clr-accent-400);
   color: var(--clr-neutral-900);
+}
+
+.bg-accent .section-title {
+  color: var(--clr-neutral-100);
+}
+.bg-accent .btn {
+  background-color: var(--clr-neutral-100);
 }
 
 /* navigation */
@@ -228,6 +235,13 @@ section {
   float: right;
 }
 
+.hero .h2 {
+  font-weight: var(--fw-400);
+}
+.hero .h2 span {
+  font-weight: var(--fw-700);
+}
+
 .hero p a {
   color: inherit;
   font-weight: inherit;
@@ -251,7 +265,8 @@ section {
 }
 
 .cta {
-  background-image: url(assets/cta-bg.jpg);
+  background-image: url(assets/cta-bg-1.jpg);
+  background-blend-mode: multiply;
   background-size: cover;
   text-align: center;
 }
