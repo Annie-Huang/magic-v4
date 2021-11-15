@@ -125,6 +125,7 @@ body {
   font-family: var(--ff-primary);
   font-size: 1.25rem;
   font-weight: 400;
+  line-height: 1.75;
   color: var(--clr-neutral-900);
   margin: 0;
 }
@@ -140,6 +141,7 @@ h1 span {
 .h2 {
   font-size: var(--fs-700);
   font-weight: 700;
+  line-height: 1.25;
 }
 
 .section-title {
@@ -174,7 +176,7 @@ a {
   /*color: inherit;*/
 
   /*padding: 0.75em 1.5em;*/
-  padding: 1.3125em 2.875em; /* 21px 46px */
+  padding: 1.3125rem 2.875rem; /* 21px 46px */
 
   background-color: var(--clr-accent-400);
   color: var(--clr-neutral-900);
@@ -275,6 +277,9 @@ section {
   background-blend-mode: multiply;
   background-size: cover;
   text-align: center;
+}
+.bg-img-secondary {
+  background-image: url(assets/cta-bg-2.jpg);
 }
 .cta .section-title {
   margin: 0 auto;
