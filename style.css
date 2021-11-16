@@ -297,14 +297,27 @@ section {
   color: var(--testimonial-color);
   padding: 2.25rem; /* 36px */
   text-align: left;
+  position: relative;
+}
+.testimonial::before {
+  position: absolute;
+  content: '';
+  width: 66px;
+  aspect-ratio: 1;
+  top: -13px;
+  left: -13px;
+  background: var(--testimonial-cornerbackground);
+  z-index: -1;
 }
 .testimonial-neutral {
   --testimonial-background: var(--clr-neutral-900);
   --testimonial-color: var(--clr-neutral-100);
+  --testimonial-cornerbackground: var(--clr-accent-400);
 }
 .testimonial-accent {
   --testimonial-background: var(--clr-accent-400);
   --testimonial-color: var(--clr-neutral-900);
+  --testimonial-cornerbackground: var(--clr-neutral-900);
 }
 .testimonial-neutral .name {
   color: var(--clr-accent-400);
