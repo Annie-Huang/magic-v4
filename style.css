@@ -293,8 +293,8 @@ section {
 }
 
 .testimonial {
-  background: var(--testimonial-background);
-  color: var(--testimonial-color);
+  background: var(--card-background);
+  color: var(--card-color);
   padding: 2.25rem; /* 36px */
   text-align: left;
   position: relative;
@@ -306,20 +306,20 @@ section {
   aspect-ratio: 1;
   top: -13px;
   left: -13px;
-  background: var(--testimonial-cornerbackground);
+  background: var(--card-cornerbackground);
   z-index: -1;
 }
-.testimonial-neutral {
-  --testimonial-background: var(--clr-neutral-900);
-  --testimonial-color: var(--clr-neutral-100);
-  --testimonial-cornerbackground: var(--clr-accent-400);
+.card-neutral {
+  --card-background: var(--clr-neutral-900);
+  --card-color: var(--clr-neutral-100);
+  --card-cornerbackground: var(--clr-accent-400);
 }
-.testimonial-accent {
-  --testimonial-background: var(--clr-accent-400);
-  --testimonial-color: var(--clr-neutral-900);
-  --testimonial-cornerbackground: var(--clr-neutral-900);
+.card-accent {
+  --card-background: var(--clr-accent-400);
+  --card-color: var(--clr-neutral-900);
+  --card-cornerbackground: var(--clr-neutral-900);
 }
-.testimonial-neutral .name {
+.card-neutral .name {
   color: var(--clr-accent-400);
 }
 
