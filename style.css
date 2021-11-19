@@ -140,19 +140,29 @@ h2,
 .section-title {
   font-size: var(--fs-300);
   line-height: 1.5;
-  letter-spacing: 1px;
-  padding: 1px 9px; /* This is the exact px from figma */
+
+  /*letter-spacing: 1px;*/
+  letter-spacing: 0.1em;
+
+  /*padding: 1px 9px; !* This is the exact px from figma *!*/
+  padding: 0.25em 0.5em;
+
   font-weight: var(--fw-700);
   text-transform: uppercase;
   color: var(--clr-accent-400);
   background: var(--clr-neutral-900);
-  width: max-content;
+
+  /*width: max-content;*/
+  display: inline-block; /* Better solution!!!! */
 }
 
 a {
   color: var(--clr-accent-500);
   text-decoration: none;
   font-weight: var(--fw-700);
+}
+.page-heading {
+  font-weight: var(--fw-400);
 }
 
 .btn {
