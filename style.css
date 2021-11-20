@@ -146,6 +146,23 @@ img {
   color: var(--clr-accent-400);
 }
 
+.corner-square::before {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 5rem;
+
+  /*background: var(--card-cornerbackground);*/
+  background: var(--clr-accent-400);
+
+  position: absolute;
+  z-index: -1;
+
+  top: -0.5rem;
+  left: -0.5rem;
+  /*transform: translate(-0.5rem, -0.5rem);*/
+}
+
 /* general styling */
 
 body {
@@ -308,20 +325,6 @@ section {
 
 .join-now li {
   position: relative;
-}
-
-.join-now li::before {
-  content: '';
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  background: var(--card-cornerbackground);
-  position: absolute;
-  z-index: -1;
-
-  top: -0.5rem;
-  left: -0.5rem;
-  /*transform: translate(-0.5rem, -0.5rem);*/
 }
 
 .cta {
