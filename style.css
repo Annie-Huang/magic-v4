@@ -340,8 +340,8 @@ section {
 }
 
 .testimonial {
-  background: var(--card-background);
-  color: var(--card-color);
+  /*background: var(--card-background);*/
+  /*color: var(--card-color);*/
   padding: 2.25rem; /* 36px */
   text-align: left;
   position: relative;
