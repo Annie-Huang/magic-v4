@@ -178,8 +178,11 @@ h2,
 
   font-weight: var(--fw-700);
   text-transform: uppercase;
-  color: var(--clr-accent-400);
-  background: var(--clr-neutral-900);
+
+  /*color: var(--clr-accent-400);*/
+  /*background: var(--clr-neutral-900);*/
+  color: var(--accent, var(--clr-accent-400));
+  background: var(--fg, var(--clr-neutral-900));
 
   /*width: max-content;*/
   display: inline-block; /* Better solution!!!! */
@@ -216,11 +219,12 @@ a {
   color: var(--fg, var(--clr-neutral-900));
 }
 
-.bg-accent .section-title {
-  color: var(--clr-neutral-100);
-}
+/* The following is handled by --accent in .bg-accent and the change in .section-title */
+/*.bg-accent .section-title {*/
+/*  color: var(--clr-neutral-100);*/
+/*}*/
 
-/* The following is handled by --accent in .bg-accent */
+/* The following is handled by --accent in .bg-accent and the change in .btn */
 /*.bg-accent .btn {*/
 /*  background-color: var(--clr-neutral-100);*/
 /*}*/
