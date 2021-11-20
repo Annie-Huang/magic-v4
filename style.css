@@ -86,11 +86,11 @@ img {
 .split {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacer) * 4);
+  /*gap: calc(var(--spacer) * 4);*/
 }
 
 .split > * + * {
-  /*margin: calc(var(--spacer) * 3) 0 0 0;*/
+  margin: calc(var(--spacer) * 3) 0 0 0;
 }
 
 @media (min-width: 40em) {
@@ -104,7 +104,8 @@ img {
   }
 
   .split > * + * {
-    margin: 0 0 0 var(--spacer);
+    /*margin: 0 0 0 var(--spacer);*/
+    margin: 0 0 0 var(--gap, var(--spacer));
   }
 }
 
@@ -278,6 +279,10 @@ section {
 
 /* individual sections */
 
+.hero {
+  --gap: 2rem;
+}
+
 .hero img {
   transform: translateY(2em);
   float: right;
@@ -333,6 +338,7 @@ section {
 }
 
 .testimonials {
+  --gap: 4rem;
   text-align: center;
 }
 .testimonials .section-title {
