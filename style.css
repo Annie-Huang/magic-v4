@@ -142,6 +142,12 @@ img {
   --accent: var(--clr-neutral-100);
 }
 
+.bg-light {
+  --fg: var(--clr-neutral-900);
+  --bg: var(--clr-neutral-100);
+  --accent: var(--clr-accent-400);
+}
+
 .text-accent {
   color: var(--accent, var(--clr-accent-400));
 }
