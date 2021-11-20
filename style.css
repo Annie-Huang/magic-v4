@@ -342,7 +342,10 @@ section {
 .testimonial {
   /*background: var(--card-background);*/
   /*color: var(--card-color);*/
-  padding: 2.25rem; /* 36px */
+
+  /*padding: 2.25rem; !* 36px *!*/
+  padding: calc(var(--spacer) * 2);
+
   text-align: left;
   position: relative;
 }
@@ -374,6 +377,9 @@ section {
   font-style: italic;
 }
 .testimonial .name {
-  margin-top: calc(var(--spacer) * 3);
+  /*margin-top: calc(var(--spacer) * 3);*/
+  margin-top: 4rem;
+
   font-weight: var(--fw-700);
+  color: var(--accent);
 }
